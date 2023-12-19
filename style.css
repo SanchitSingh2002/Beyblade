@@ -8,9 +8,16 @@
 }
 
 .rotate-infinite {
-  animation: rotate infinite 0.2s linear; /* You can adjust the duration and timing function */
+  animation: rotate infinite 5s linear; /* You can adjust the duration and timing function */
   position: absolute;
   top: 4%;
   left: 32%;
-  
+}
+
+@media only screen and (max-width: 600px) {
+  .rotate-infinite {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
